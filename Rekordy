@@ -1,0 +1,46 @@
+#include <string.h>
+#include <iostream>
+using namespace std;
+
+struct osoba {
+  string imie;
+  string nazwisko;
+  int wiek;
+};
+
+int main()
+{	
+    osoba uczen;
+    osoba uczen2;
+    osoba uczen3;
+    
+    
+	uczen.imie="Marcel";
+	uczen.nazwisko="Sworowski";
+	uczen.wiek=16;
+	
+	  
+	uczen2.imie="Piotr";
+	uczen2.nazwisko="Skowyrski";
+	uczen2.wiek=17;
+	
+	  
+	uczen3.imie="Jakub";
+	uczen3.nazwisko="Myc";
+	uczen3.wiek=15;
+	
+	
+	cout<<"Ucznia imie to:" << uczen.imie << endl;
+	cout<<"Ucznia nazwisko to:" << uczen.nazwisko << endl;
+    cout<<"Ucznia wiek to:" << uczen.wiek << endl;
+    
+	cout<<"Ucznia imie to:" << uczen2.imie << endl;
+	cout<<"Ucznia nazwisko to:" << uczen2.nazwisko << endl;
+    cout<<"Ucznia wiek to:" << uczen2.wiek << endl;
+    
+	cout<<"Ucznia imie to:" << uczen3.imie << endl;
+	cout<<"Ucznia nazwisko to:" << uczen3.nazwisko << endl;
+    cout<<"Ucznia wiek to:" << uczen3.wiek << endl;
+	return 0;
+	
+}
