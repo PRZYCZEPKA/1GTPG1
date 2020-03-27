@@ -1,0 +1,85 @@
+#include <string.h>
+#include <iostream>
+using namespace std;
+
+struct film {
+  string tytul;
+  string rezyser;
+  int rok;
+  string gatunek;
+  int czasTrwaniaMinut;
+   
+};
+
+int main()
+{	
+    film Spiderman;
+    film Batman;
+    film Joker;
+    film Venom;
+    film Antman;
+    
+    
+	Spiderman.tytul="SpiderMan";
+	Spiderman.rezyser="Sam Raimi";
+	Spiderman.rok=2002;
+	Spiderman.gatunek="Akcja Sci-Fi";
+	  
+	Batman.tytul="Batman";
+	Batman.rezyser="Tim Burton";
+	Batman.rok=1989;
+	Batman.gatunek="Akcja Sci-Fi";
+	
+	Joker.tytul="Joker";
+	Joker.rezyser="Todd Phillips";
+	Joker.rok=2019;
+	Joker.gatunek="Dramat";
+
+    Venom.tytul="Venom";
+	Venom.rezyser="Ruben Fleischer";
+	Venom.rok=2018;
+	Venom.gatunek="Akcja Sci-Fi";
+	 
+	Antman.tytul="Ant-man";
+	Antman.rezyser="Peyton Reed";
+	Antman.rok=2015;
+	Antman.gatunek="Akcja Sci-Fi";
+	
+	cout<<"-------------------------------------------"<<endl;
+	
+    cout<<"Tytul filmu to:" << Spiderman.tytul << endl;
+	cout<<"Rezyseria filmu to:" << Spiderman.rezyser << endl;
+    cout<<"Data powstania filmu to:" << Spiderman.rok << endl;
+    cout<<"Gatunek filmu to:" << Spiderman.gatunek << endl;
+    
+    cout<<"-------------------------------------------"<<endl;
+    
+    cout<<"Tytul filmu to:" << Batman.tytul << endl;
+	cout<<"Rezyseria filmu to:" << Batman.rezyser << endl;
+    cout<<"Data powstania filmu to:" << Batman.rok << endl;
+    cout<<"Gatunek filmu to:" << Batman.gatunek << endl;
+    
+    cout<<"-------------------------------------------"<<endl;
+    
+    cout<<"Tytul filmu to:" << Joker.tytul << endl;
+	cout<<"Rezyseria filmu to:" << Joker.rezyser << endl;
+    cout<<"Data powstania filmu to:" << Joker.rok << endl;
+    cout<<"Gatunek filmu to:" << Joker.gatunek << endl;
+    
+    cout<<"-------------------------------------------"<<endl;
+    
+    cout<<"Tytul filmu to:" << Venom.tytul << endl;
+	cout<<"Rezyseria filmu to:" << Venom.rezyser << endl;
+    cout<<"Data powstania filmu to:" << Venom.rok << endl;
+    cout<<"Gatunek filmu to:" << Venom.gatunek << endl;
+    
+    cout<<"-------------------------------------------"<<endl;
+    
+    cout<<"Tytul filmu to:" << Antman.tytul << endl;
+	cout<<"Rezyseria filmu to:" << Antman.rezyser << endl;
+    cout<<"Data powstania filmu to:" << Antman.rok << endl;
+    cout<<"Gatunek filmu to:" << Antman.gatunek << endl;
+	
+	return 0;
+	
+}
