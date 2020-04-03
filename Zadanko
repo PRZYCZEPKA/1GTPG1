@@ -1,0 +1,26 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main()
+{
+     string a;
+      
+  
+  
+        
+    ifstream plik2;
+    plik2.open("d:\\Zadanie\\a.txt");  
+     while(!plik2.eof())        //petla wykonuje sie az program dojedzie do konca pliku 
+                         {
+                         plik2>>a;   // wyswietlanie
+                         cout<<a;    //    tekstu
+                         cout<<endl; //  na ekranie
+                         } 
+    plik2.close();
+    
+    cout<<endl;
+    system("PAUSE");
+    return 0;
+}
