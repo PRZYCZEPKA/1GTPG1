@@ -1,0 +1,37 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+int main()
+{
+        ifstream wejscie;
+        ofstream wyjscie;
+        wejscie.open("wej.txt");
+        wyjscie.open("wyj.txt");
+        int 1 =1;
+        int 2 [1000];
+        int 3 =0;
+        int 4 ;
+        int 5 = 0;
+        cout << "[  ";
+        while(wejscie.good()) {
+
+                if (!wejscie.eof()) {
+                    wejscie >> b;
+
+                }
+            if (wejscie.good()) {
+
+                if (b%2==1) {
+
+                       cout<<"\n { \n  "nieparzysta":"<<b <<"\n }";
+                }
+            }
+
+
+        }
+        cout << "\b \n ]";
+        wejscie.close();
+        wyjscie.close();
+
+    return 0;
+}
