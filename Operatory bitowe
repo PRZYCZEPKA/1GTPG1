@@ -1,0 +1,42 @@
+#include <iostream>
+#include <bitset>
+using namespace std;
+string dec2bin(int x){
+    int d;
+    string znak;
+    if (x > 0){
+        d = x;
+        znak = "";
+    }else{
+        d=x * -1;
+        znak="-";
+    }
+    string binary = bitset<8>(d).to_string();
+    binary.erase(0, min(binary.find_first_not_of('0'), binary.size()-1));
+    binary = znak + binary;
+    return binary;
+}
+int main(int argc, char** argv) {
+    unsigned char A;
+    unsigned char B;
+    cout << "Prosze podaj A: ";
+    cin>>A;
+    cout << "Prosze podaj B: ";
+    cin>>B;
+    /////////////////////////
+    string binaryA=dec2bin(A);
+    string binaryB=dec2bin(B);
+    ////////////////////////////////////// 
+    string aandbbin=dec2bin((A&B));
+    string aorbbin=dec2bin((A|B));
+    string axorbbin=dec2bin((A^B));
+    /////////////////////////////////////
+    cout<<"DWOJKOWE A:"<<binaryA<<"\n";
+    cout<<"DWOJKOWE B:"<<binaryB<<"\n";
+    /////////////////////////////////////
+     cout<<"A&B: "<<aandbbin<<"\n";
+    cout<<"A|B: "<<aorbbin<<"\n";
+    cout<<"A^B: "<<axorbbin<<"\n";
+    cout<<" & "<<(A&B);
+    return 0;
+}
